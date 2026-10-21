@@ -1,5 +1,7 @@
 # shot-contract
 
+[![ci](https://github.com/tongxigogo-crypto/shot-contract/actions/workflows/ci.yml/badge.svg)](https://github.com/tongxigogo-crypto/shot-contract/actions/workflows/ci.yml)
+
 A checkable contract for AI video storyboards.
 
 It does not generate video. It stops a storyboard from being a paragraph of
