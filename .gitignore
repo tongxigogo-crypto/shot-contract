@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+coverage/
+.idea/
+.vscode/
+*.swp
+
+# Private rule libraries stay local. Never commit a corpus you do not own.
+rules.local.json
+rules/*.private.json
+*.corpus.json
+
+# Generated media stays out of the contract repository.
+*.mp4
+*.mov
+*.wav
+renders/
+footage/

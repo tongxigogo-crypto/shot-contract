@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "0.1",
+  "projectId": "demo-corridor-scene",
+  "format": {
+    "aspect": "9:16",
+    "fps": 30,
+    "platform": "short-video"
+  },
+  "intent": "Two people argue in a corridor; a third arrives and the argument stops.",
+  "shots": [
+    {
+      "id": "S01",
+      "startSec": 0,
+      "durationSec": 5,
+      "purpose": "Establish that B is waiting and has already decided to confront A.",
+      "ruleRefs": ["LOW-1"],
+      "characters": ["B"],
+      "content": "00:00-00:02 B walks toward camera from the far end of the corridor, hands out of pockets. 00:02-00:05 B stops one step short of frame, chin lifts.",
+      "spatial": {
+        "axis": ["B", "door"],
+        "cameraHeight": "chest",
+        "lens": "wide",
+        "move": "static",
+        "motivation": "B's walk supplies the approach; the camera stays put so the stop reads as a decision."
+      },
+      "negative": [
+        "no text or signage invented on the walls",
+        "no change in corridor length between frames",
+        "feet stay in contact with the floor"
+      ]
+    },
+    {
+      "id": "S02",
+      "startSec": 5,
+      "durationSec": 6,
+      "purpose": "Let A refuse the accusation without leaving the frame, so the refusal costs something.",
+      "ruleRefs": ["OTS-1"],
+      "characters": ["A", "B"],
+      "dialogue": [
+        { "speaker": "B", "line": "You said you would tell me first." },
+        { "speaker": "A", "line": "I did tell you. You weren't listening." }
+      ],
+      "content": "00:00-00:03 over B's shoulder: A keeps their eyes on the floor, then lifts them on \"weren't listening\". 00:03-00:06 reverse over A's shoulder: B's jaw sets, no reply.",
+      "spatial": {
+        "axis": ["A", "B"],
+        "cameraHeight": "eye",
+        "lens": "long",
+        "move": "static",
+        "motivation": "No move. The cut on the last word carries the pressure."
+      },
+      "negative": [
+        "no shoulder swap inside a single take",
+        "no face morph on the head lift",
+        "both speakers keep the same screen side across the cut"
+      ]
+    },
+    {
+      "id": "S03",
+      "startSec": 11,
+      "durationSec": 8,
+      "purpose": "Bring C into the argument as an authority neither A nor B expected, and kill the tension with their arrival.",
+      "ruleRefs": ["BLOCK-1", "DOLLY-1"],
+      "characters": ["A", "B", "C"],
+      "topDownMap": {
+        "anchors": ["A at frame left, back to the wall", "B at frame right, facing A", "C entering from the stairwell behind B"],
+        "cameraRoute": "lateral track right to left, starting behind the pillar at frame right",
+        "focusHandoff": "A → C on the pillar clearing the frame"
+      },
+      "content": "00:00-00:04 camera tracks left past the pillar; C is revealed standing still at the stairwell. 00:04-00:08 push in on A as A turns to C; B stays out of focus in the foreground.",
+      "spatial": {
+        "axis": ["A", "C"],
+        "cameraHeight": "chest",
+        "lens": "medium",
+        "move": "lateral track then push in",
+        "motivation": "C's stillness after the track is the trigger for the push."
+      },
+      "negative": [
+        "pillar must not clip through B",
+        "C does not walk during the reveal",
+        "no extra figures in the stairwell",
+        "B's position does not jump between the track and the push"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+name: Contract proposal
+description: Propose a new storyboard field, validation rule, or limit.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: failure
+    attributes:
+      label: What real failure does this prevent?
+      description: Describe the shot that went wrong, not the abstraction. "The axis flipped on the cut and nobody caught it" beats "we need better checks".
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Where does it belong?
+      options:
+        - Storyboard contract (field or limit)
+        - Validator rule (src/validate.mjs)
+        - Rule library format
+        - Evidence contract
+        - Agent procedure (SKILL.md)
+    validations:
+      required: true
+
+  - type: textarea
+    id: shape
+    attributes:
+      label: Proposed field or rule
+      render: json
+    validations:
+      required: false
+
+  - type: textarea
+    id: compat
+    attributes:
+      label: What happens to existing storyboards?
+      description: Does this break current documents? Is it an error or a warning?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ownership
+    attributes:
+      label: Rule library boundary
+      options:
+        - label: This proposal does not require shipping a third-party rule corpus.
+          required: true

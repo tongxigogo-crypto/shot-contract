@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "0.1",
+  "source": {
+    "kind": "original",
+    "note": "Four rules written for this repository as format examples. They describe common camera grammar in my own words. Replace this file with your own library; do not commit a library you have no right to redistribute."
+  },
+  "rules": [
+    {
+      "id": "OTS-1",
+      "title": "Over-the-shoulder reverse",
+      "purpose": "Hold two speakers in one spatial relationship while the audience tracks who holds the floor.",
+      "conditions": "Two characters, seated or standing at a stable distance. Camera behind and slightly beside the listener's shoulder. Alternate sides only on a deliberate cut.",
+      "risk": "Swapping shoulders without a cut reads as a jump; the listener's shoulder can eat the speaker's face if the lens is too long."
+    },
+    {
+      "id": "LOW-1",
+      "title": "Low angle on approach",
+      "purpose": "Make an entering figure occupy more of the frame than their distance justifies, without dialogue.",
+      "conditions": "Camera below chest height, tilted up, subject walking toward lens. Keep the horizon out of frame or the tilt reads as a mistake.",
+      "risk": "The subject's feet leave frame and the walk loses contact with ground; a wide lens here turns the face into a caricature."
+    },
+    {
+      "id": "DOLLY-1",
+      "title": "Motivated push-in",
+      "purpose": "Convert a decision into a change of distance, so the audience feels the moment land.",
+      "conditions": "A visible trigger in frame: a hand closing, a head turn, a line finishing. Push starts after the trigger, not before.",
+      "risk": "Pushing without a trigger reads as drift; if the push outruns the subject's motion the model smears the face."
+    },
+    {
+      "id": "BLOCK-1",
+      "title": "Foreground reveal",
+      "purpose": "Introduce a third presence by moving the camera past something that was hiding it.",
+      "conditions": "A doorway, pillar, or shelf at the frame edge. Camera tracks laterally until the occluder clears the subject.",
+      "risk": "The occluder can clip through the subject mid-move; a reveal that lands too early spends the surprise before the cut."
+    }
+  ]
+}

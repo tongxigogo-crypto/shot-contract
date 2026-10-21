@@ -1,0 +1,45 @@
+{
+  "name": "shot-contract",
+  "version": "0.1.0",
+  "description": "A checkable contract for AI video storyboards: dramatic motive, one or two rules per shot, spatial anchors, negative constraints, and a rule library you own.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "shot": "./src/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./validate": "./src/validate.mjs"
+  },
+  "files": [
+    "src",
+    "references",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "validate:examples": "node ./src/cli.mjs validate --file examples/storyboard.json --rules examples/rules.sample.json && node ./src/cli.mjs rules --file examples/rules.sample.json",
+    "check": "npm test && npm run validate:examples"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "storyboard",
+    "shot-list",
+    "ai-video",
+    "prompt-engineering",
+    "agent-skill",
+    "pre-production"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tongxigogo-crypto/shot-contract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tongxigogo-crypto/shot-contract/issues"
+  },
+  "homepage": "https://github.com/tongxigogo-crypto/shot-contract#readme"
+}
