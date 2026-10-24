@@ -117,6 +117,12 @@ Honest scope, at `0.1.0`:
 - There is no renderer integration and no prompt-to-video runner. The output is a
   validated storyboard, which any tool can consume.
 
-## License
+## License & Commercial Restrictions
 
-MIT. See `references/rule-library-format.md` before adding a rule library.
+This project is licensed under the **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE)**. See `references/rule-library-format.md` before adding a rule library.
+
+### ⚠️ Non-Commercial & Platform Redistribution Restrictions
+
+- **Personal & Research Use**: Free for personal learning, testing, and academic research.
+- **No Commercial Use**: You may not use this material (prompts, skill manifests, contracts, schemas, or source code) for commercial purposes without explicit prior written authorization.
+- **No Paid Marketplace / Platform Resale**: Explicitly prohibited from packaging, repackaging, or listing this project as a paid skill, tool, or MCP on any third-party agent marketplace or platform (including but not limited to Tencent WorkBuddy, Dify, Coze, GPT Store, etc.).

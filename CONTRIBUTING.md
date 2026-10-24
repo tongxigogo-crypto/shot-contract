@@ -43,4 +43,4 @@ what you expected.
 
 ## License
 
-Contributions are licensed under MIT.
+Contributions are licensed under CC-BY-NC-4.0.

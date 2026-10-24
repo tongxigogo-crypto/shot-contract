@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A checkable contract for AI video storyboards: dramatic motive, one or two rules per shot, spatial anchors, negative constraints, and a rule library you own.",
   "type": "module",
-  "license": "MIT",
+  "license": "CC-BY-NC-4.0",
   "bin": {
     "shot": "./src/cli.mjs"
   },
